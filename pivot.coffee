@@ -15,7 +15,7 @@ callWithJQuery ($) ->
 
     addSeparators = (nStr, thousandsSep, decimalSep) ->
         nStr += ''
-        x = nStr.split('.')
+        x = nStr.split('.') + '5'
         x1 = x[0]
         x2 = if x.length > 1 then  decimalSep + x[1] else ''
         rgx = /(\d+)(\d{3})/
